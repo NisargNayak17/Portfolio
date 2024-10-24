@@ -57,9 +57,8 @@ nav i{
     display: none;
 }
 .home{
-    margin-top: 20%;
-    margin-bottom: 20%;
-    margin-left: 10%;
+    
+    padding-top: 30px;
 }
 /* heder section  */
 .header-text{
@@ -85,6 +84,7 @@ nav i{
 }
 #introduction .col-1{
     flex-basis: 35%;
+    margin-left: 20px;
 }
 #introduction .col-2{
     flex-basis: 60%;
@@ -100,6 +100,9 @@ nav i{
 }
 #introduction .col-2 p{
     color:black;
+}
+h3{
+    color: #0e1d80;
 }
 .tab-class{
     display: flex;
@@ -143,25 +146,21 @@ nav i{
     flex-direction: column;
     padding: 100px 0;
     margin-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 0px;
     
 }
 .heading h2{
-    background-color: #4458dc;
+       background-color: #000000;
         font-size: 80px;
         letter-spacing: 11px;
         margin: 20px;
+        margin-bottom:50px;
         color: white;
         font-weight: 600px;
         padding: 10px;
         transition: background-color 0.3s ease;
         box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
       }
-      /**font-size: 80px;
-    letter-spacing: 11px;
-    margin: 20px;
-    color: darkmagenta;
-    font-weight: 600;**/
 
 .skill-content{
     display: grid;
@@ -178,7 +177,6 @@ nav i{
     font-weight: 500;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 .skill-data p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -216,7 +214,42 @@ nav i{
     }
     
 }
-
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    margin-left: 20px;
+}
+.project-div-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 2px solid #ff004f;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 11px;
+    width: 70%;
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.icons, .links {
+    display: flex;
+    gap: 10px; /* Space between icons or links */
+    align-items: center; /* Align items in the center */
+}
+.icons{
+    font-size: 30px;
+}
 /*        Contact section starts        */
 #contact{
     margin-left: 40px;
@@ -346,7 +379,7 @@ span #msg{
         right: 0;
         color: white;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 999;
         transition: right 0.5s;
     }
     nav ul li{
